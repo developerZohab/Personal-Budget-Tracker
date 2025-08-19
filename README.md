@@ -5,14 +5,14 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Data%20Analysis-yellow?logo=numpy)](https://numpy.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-green?logo=pandas)](https://pandas.pydata.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=matplotlib)](https://matplotlib.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/your-username/personal-budget-tracker?style=social)](https://github.com/your-username/personal-budget-tracker/stargazers)
-[![Issues](https://img.shields.io/github/issues/your-username/personal-budget-tracker)](https://github.com/your-username/personal-budget-tracker/issues)
-[![Build](https://img.shields.io/github/actions/workflow/status/your-username/personal-budget-tracker/ci.yml?label=Build&logo=github)](https://github.com/your-username/personal-budget-tracker/actions)
 
-A **modern, beginner-friendly web application** built with Python and Streamlit to help individuals, families, freelancers, and small businesses track expenses, analyze spending habits, and gain actionable financial insights. This app transforms raw expense data into interactive visualizations and smart recommendations, addressing real-world budgeting challenges like identifying overspending and forecasting savings.
 
-Whether you're a beginner practicing data skills or a user seeking better financial control, this project is scalable, secure, and easy to deploy.
+A Python-based Streamlit web app for tracking and analyzing expenses. Upload CSVs, clean data with Pandas, compute insights with NumPy, and visualize trends with Matplotlib/Plotly/Altair. Offers secure authentication, filtering, forecasts, alerts, and report exports. Deployable via Streamlit Cloud, ideal for beginners and financial planning.
+
+---
+
+## 📂 Project Structure
+
 
 ---
 
@@ -57,16 +57,19 @@ This stack is free, open-source, and integrates seamlessly—setup in 1-2 hours!
 ## 📂 Project Structure
 
 ```
-├── app/                  # Main application code
-│   ├── auth/             # Authentication logic
-│   ├── analysis/         # Expense analysis and forecasting functions
-│   ├── visualizations/   # Chart generation with Matplotlib/Plotly
-│   └── utils/            # Helpers for data cleaning and validation
-├── data/                 # Sample CSV files (e.g., expenses_500_rows.csv)
-├── reports/              # Generated export files
-├── requirements.txt      # Project dependencies
-├── LICENSE               # MIT License
-└── README.md             # This documentation
+project/
+project/
+├── app/                  # Main Streamlit application code
+│   ├── auth/             # Authentication logic (e.g., login/signup scripts)
+│   ├── analysis/         # Expense analysis and forecasting modules
+│   ├── visualizations/   # Visualization scripts (e.g., Matplotlib/Plotly)
+│   └── main.py           # Streamlit app entry point
+├── data/                 # Sample expense data files (e.g., expenses.csv)
+├── reports/              # Directory for generated report outputs
+├── .gitignore            # Git ignore file
+├── README.md             # Project documentation
+├── requirements.txt      # Python package dependencies
+└── LICENSE               # Project license (e.g., MIT)
 ```
 
 ---
@@ -91,9 +94,9 @@ pip install -r requirements.txt
 
 ### 4. Run the App Locally
 ```bash
-streamlit run app/main.py
+ run app/main.py
 ```
-Access it at **http://localhost:8501/** in your browser.
+Access it at **http://localhost:5173/** in your browser.
 
 ### 5. Testing
 - Use the sample `expenses_500_rows.csv` for uploads.
@@ -149,12 +152,6 @@ Make your app public and professional:
 ## 🙌 Contributing
 
 We welcome contributions! Fork the repo, make improvements (e.g., new features or bug fixes), and submit a pull request. Follow best practices like adding tests and updating docs.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
